@@ -1,0 +1,41 @@
+.facilities-container {
+  padding: 2rem;
+  /* text-align: center; */
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.head h1 {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+
+.head hr {
+
+  margin: 0 auto;
+  border: 2px solid #000;
+  margin-bottom: 2rem;
+   margin-bottom: 100px;
+}
+
+.facilities {
+   
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.facility {
+  width: 270px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  /* background-color: #fff; */
+  transition: transform 0.3s ease;
+}
+
+.facility:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}

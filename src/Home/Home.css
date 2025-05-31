@@ -1,0 +1,57 @@
+.home-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/Hospital1.jpg'); /* Use your actual path */
+  background-size: cover;
+  background-position: center;
+  margin-top: -200px;
+  filter: blur(3px);
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 15px;
+  z-index: 2; /* Must be above the blur layer */
+}
+
+.overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  background-color: transparent;
+}
+
+.book-button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+}
