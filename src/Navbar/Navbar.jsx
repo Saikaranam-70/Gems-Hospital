@@ -27,7 +27,10 @@ const Navbar = () => {
           {menuOpen && (
             <div className="menu-dropdown">
               <ul>
+                <Link to='/'>
                 <li>Home</li>
+                </Link>
+                
                 <Link to='/about'>
                 <li>About Us</li>
                 </Link>
