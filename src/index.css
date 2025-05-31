@@ -1,6 +1,74 @@
-*{
+:root {
+  --hospital-blue: #e6f2ff; /* Softer blue for less eye strain */
+  --clean-white: #ffffff;
+  --accent-blue: #0077b6; /* Professional medical blue */
+  --text-dark: #2d3748; /* Better contrast for readability */
+  --emergency-red: #e63946; /* For important alerts */
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* background-color: #cf5858; */
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* More modern font stack */
+  background-color: var(--hospital-blue);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Main container with medical aesthetic */
+.container {
+  background-color: var(--clean-white);
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 105, 180, 0.1); /* Blue-tinted shadow */
+  border-top: 4px solid var(--accent-blue); /* Medical ribbon effect */
+}
+
+/* Accessibility improvements */
+a, button {
+  color: var(--accent-blue);
+}
+
+h1, h2, h3 {
+  color: var(--accent-blue);
+  margin-bottom: 1rem;
+}
+
+/* Emergency section styling */
+.emergency {
+  background-color: #fff0f0;
+  border-left: 4px solid var(--emergency-red);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+/* Button styling for medical CTAs */
+.btn {
+  background-color: var(--accent-blue);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #005f92;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+    padding: 1rem;
+  }
 }

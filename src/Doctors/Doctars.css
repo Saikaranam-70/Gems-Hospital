@@ -6,7 +6,7 @@
 
 .doctors-title {
   text-align: center;
-  color: #fff;
+  color: #000000;
   margin-bottom: 32px;
   letter-spacing: 1px;
   
@@ -18,7 +18,7 @@
 }
 
 .doctors-department-title {
-  color: #fff;
+  color: #000000;
   border-bottom: 2px solid #fff2;
   padding-bottom: 6px;
   margin-bottom: 18px;
