@@ -25,20 +25,25 @@ const services = [
 const Services = () => {
   return (
     <div className="services-container">
-      <div className="head">
+      <div className="head" data-aos="fade-down">
         <h1>SERVICES</h1>
         <hr />
       </div>
       <div className="services">
         {services.map((service, index) => (
-          <div key={index} className="service">
+          <div
+            key={index}
+            className="service"
+            data-aos="zoom-in"
+            data-aos-delay={index * 120}
+          >
             <img src={service.image} className='image' alt={service.name} />
             <h3 className="name">{service.name}</h3>
             <p className="desc">{service.desc}</p>
           </div>
         ))}
       </div>
-      <button className="show-more-btn">Show More</button>
+      <button className="show-more-btn" data-aos="fade-up" data-aos-delay="400">Show More</button>
     </div>
   );
 };

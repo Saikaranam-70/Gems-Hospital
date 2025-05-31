@@ -1,0 +1,23 @@
+.loader-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black
+}
+
+.loader-svg {
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+  animation: loader-fadein 3s ease-in-out forwards;
+}
+
+@keyframes loader-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
