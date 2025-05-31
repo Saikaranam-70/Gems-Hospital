@@ -1,0 +1,88 @@
+.doctors-container {
+  padding: 24px;
+  
+
+}
+
+.doctors-title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  
+}
+
+.doctors-department {
+  margin-bottom: 32px;
+  margin-top: 100px;
+}
+
+.doctors-department-title {
+  color: #fff;
+  border-bottom: 2px solid #fff2;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  
+}
+
+.doctors-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.doctor-card {
+  border: 1px solid #fff2;
+  border-radius: 10px;
+  padding: 16px;
+  width: 220px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px #0001;
+  transition: transform 0.2s;
+  background-color: #1e3a5c;
+}
+
+.doctor-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 4px 16px #0002;
+}
+
+.doctor-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+  border: 2px solid #cf5858;
+  background: #eee;
+}
+
+.doctor-name {
+  font-weight: 600;
+  color: #cf5858;
+  margin-bottom: 4px;
+  font-size: 1.1rem;
+  text-align: center;
+  background-color: inherit;
+}
+
+.doctor-designation {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 2px;
+  text-align: center;
+  background-color: inherit;
+}
+
+.doctor-id,
+.doctor-mobile {
+  font-size: 13px;
+  color: #888;
+  text-align: center;
+  background-color: inherit;
+}

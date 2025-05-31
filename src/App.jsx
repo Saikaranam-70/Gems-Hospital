@@ -4,6 +4,8 @@ import Home from './Home/Home'
 import { Route, Router, Routes } from 'react-router-dom'
 import Footer from './Footer/Footer'
 import AboutUs from './AboutUs/AboutUs'
+import Departments from './Departments/Departments'
+import Doctors from './Doctors/Doctors'
 
 const App = () => {
   return (
@@ -12,6 +14,8 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<AboutUs />} />
+        <Route path='/departments' element={<Departments />} />
+        <Route path='/doctors' element={<Doctors />} />
       </Routes>
       <Footer />
     </div>
