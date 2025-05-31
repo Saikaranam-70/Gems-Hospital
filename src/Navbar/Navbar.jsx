@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../assets/logo.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +28,9 @@ const Navbar = () => {
             <div className="menu-dropdown">
               <ul>
                 <li>Home</li>
+                <Link to='/about'>
                 <li>About Us</li>
+                </Link>
                 <li>Departments</li>
                 <li>Doctors</li>
                 <li>Contact Us</li>
