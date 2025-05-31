@@ -13,7 +13,9 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="logo">
+        <Link to='/'>
         <img src={logo} className='img' alt="Logo" />
+        </Link>
       </div>
       <div className="details">
         <div className="input">

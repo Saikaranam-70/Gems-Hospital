@@ -71,8 +71,11 @@
   cursor: pointer;
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
+  list-style: none;
+  text-decoration: none;
+
 }
 
 .menu-dropdown ul li:hover {
-  background-color: #dce7eb;
+  background-color: #1e3a5c;
 }

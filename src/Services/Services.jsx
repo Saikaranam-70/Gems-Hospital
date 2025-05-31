@@ -3,6 +3,7 @@ import './Services.css';  // Import external CSS
 import cardiology from '../assets/cardiology.jpg'
 import radiology from '../assets/radiology.png'
 import neprology from '../assets/image.png'
+import { Link } from 'react-router-dom';
 
 const services = [
   {
@@ -43,7 +44,9 @@ const Services = () => {
           </div>
         ))}
       </div>
+      <Link to='/departments'>
       <button className="show-more-btn" data-aos="fade-up" data-aos-delay="400">Show More</button>
+      </Link>
     </div>
   );
 };
