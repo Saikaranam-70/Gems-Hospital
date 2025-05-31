@@ -6,6 +6,7 @@ import Footer from './Footer/Footer'
 import AboutUs from './AboutUs/AboutUs'
 import Departments from './Departments/Departments'
 import Doctors from './Doctors/Doctors'
+import Contact from './Contact/Contact'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='/about' element={<AboutUs />} />
         <Route path='/departments' element={<Departments />} />
         <Route path='/doctors' element={<Doctors />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
       <Footer />
     </div>
